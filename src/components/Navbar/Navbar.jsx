@@ -5,7 +5,7 @@ const Navbar = ({logo}) => {
     return(
         <>
         <div className="flex flex-row justify-between items-center px-8 py-3 sticky top-0 z-[99] bg-white">
-            <Image src={logo}/>
+            <Image src={logo} alt="logo not found"/>
             <div className="flex flex-row gap-8 items-center">
                 <a className="cursor-pointer">Docs</a>
                 <a className="cursor-pointer">Product</a>

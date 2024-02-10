@@ -1,7 +1,14 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+<<<<<<< HEAD
 import Navbar from "@/components/Navbar/Navbar";
 import Logo from "@/../public/Logo.svg";
+=======
+import DashboardNavbar from "@/components/DashboardNavbar/DashboardNavbar";
+import Logo from "@/assets/images/fiingLogo.svg";
+import UserImage from "@/assets/images/demoUser.jpg";
+import SideNavbar from "@/components/SideNavbar/SideNavbar";
+>>>>>>> 7cd9b57 (dashboard)
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,11 +19,30 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+<<<<<<< HEAD
     <html lang='en'>
       <body>
         <Navbar logo={Logo} />
         {children}
       </body>
+=======
+    <html lang="en">
+      <body className="overflow-hidden">
+      <section>
+        <DashboardNavbar logo={Logo} userimage={UserImage} username={"Ankit"}/>
+        <div className="flex flex-row">
+            <div>
+            <SideNavbar/>
+            </div>
+            
+            <div className="overflow-scroll relative">
+            {children}
+            </div>
+        </div>
+          
+        </section>
+        </body>
+>>>>>>> 7cd9b57 (dashboard)
     </html>
   );
 }
