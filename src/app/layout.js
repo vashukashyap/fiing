@@ -15,21 +15,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="overflow-hidden">
-      <section>
-        <DashboardNavbar logo={Logo} userimage={UserImage} username={"Ankit"}/>
-        <div className="flex flex-row">
-            <div>
-            <SideNavbar/>
+      <body className="">
+        <section className="w-full h-fit">
+          <DashboardNavbar
+            logo={Logo}
+            userimage={UserImage}
+            username={"Ankit"}
+          />
+          <div className="flex flex-row h-[90vh]">
+            <div className="">
+              <SideNavbar />
             </div>
-            
-            <div className="overflow-scroll relative">
-            {children}
-            </div>
-        </div>
-          
+
+            <div className=" overflow-y-scroll w-full">{children}</div>
+          </div>
         </section>
-        </body>
+      </body>
     </html>
   );
 }
