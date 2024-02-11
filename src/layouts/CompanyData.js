@@ -29,8 +29,12 @@ const CompanyData = () => {
       >
         {breadcrumbs}
       </Breadcrumbs>
-      <CustTable />
-      <div className='w-10 !bg-blue-700'>Upload Invoice </div>
+      <div className='h-[58vh] overflow-y-scroll'>
+        <CustTable />
+      </div>
+      <div className='w-full bg-[#2E90FA] py-3 font-semibold text-white text-center rounded-full'>
+        Upload Invoice{" "}
+      </div>
     </div>
   );
 };

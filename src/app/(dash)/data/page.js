@@ -2,11 +2,15 @@ import CreateCompanyButton from "@/components/CreateCompanyButton/CreateCompanyB
 import DashboardImage from "@/assets/images/dashboardImage.png";
 import Image from "next/image";
 import CompanyData from "@/layouts/CompanyData";
+import NewTransaction from "@/layouts/NewTransaction";
+import CompanyDetails from "@/layouts/CompanyDetails";
 
 export default function Home() {
   return (
     <>
-      <CompanyData />
+      {/* <CompanyData /> */}
+      {/* <NewTransaction /> */}
+      <CompanyDetails />
     </>
   );
 }
