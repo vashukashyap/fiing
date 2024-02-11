@@ -30,7 +30,7 @@ const CompanyData = () => {
         {breadcrumbs}
       </Breadcrumbs>
       <CustTable />
-      <button className='w-full bg-blue-600 h-10'>Upload Invoice </button>
+      <div className='w-10 !bg-blue-700'>Upload Invoice </div>
     </div>
   );
 };
