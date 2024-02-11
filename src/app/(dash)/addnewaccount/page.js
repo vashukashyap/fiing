@@ -4,13 +4,13 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import CompanyData from '@/layouts/CompanyData';
+import CreateAccount from '@/layouts/CreateAccount';
 
-export default function CreateAccount() {
+export default function Home() {
   return (
     <>
       <div className="p-8">
-        <CompanyData/>
+        <CreateAccount/>
       </div>
     </>
   );
