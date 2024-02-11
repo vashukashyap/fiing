@@ -3,7 +3,7 @@ import DashboardImage from "@/assets/images/dashboardImage.png";
 import Image from "next/image";
 
 
-export default function Home() {
+export default function Account() {
     return (
       <>
         <div className="p-8">
