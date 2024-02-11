@@ -47,7 +47,11 @@ const Advantages = () => {
                 damping: 40,
               }}
             >
-              <Image className='w-[20rem] sm:w-[26rem]' src={AnimationImg} />
+              <Image
+                className='w-[20rem] sm:w-[26rem]'
+                src={AnimationImg}
+                alt='animation image not found'
+              />
             </motion.div>
             <div className='h-[20rem] w-[20rem] bg-[#D6BBFB] rounded-full absolute -z-10'></div>
             <div ref={ref}></div>

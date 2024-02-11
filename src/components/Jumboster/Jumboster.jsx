@@ -24,7 +24,7 @@ const Jumboster = () => {
           </button>
         </div>
         <div>
-          <Image src={JumbosterImage} />
+          <Image src={JumbosterImage} alt='jumboster image not found' />
         </div>
       </div>
     </>
