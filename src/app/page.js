@@ -8,16 +8,19 @@ import Image from "next/image";
 import Logo from "@/../public/Logo.svg";
 import CreateCompanyButton from "@/components/CreateCompanyButton/CreateCompanyButton";
 import DashboardImage from "@/assets/images/dashboardImage.png";
+import LogoM from "@/assets/images/fiingLogo.svg";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
     <>
-    <Jumboster/>
-    <FeatureSection/>
-    <Advantages/>
-    <BrandsSection/>
-    <FaqsSection/>
-    <Footer logo={Logo}/>
+      <Navbar logo={LogoM} />
+      <Jumboster />
+      <FeatureSection />
+      <Advantages />
+      <BrandsSection />
+      <FaqsSection />
+      <Footer logo={Logo} />
     </>
   );
 }

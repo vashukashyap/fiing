@@ -14,39 +14,40 @@ import logo13 from "@/assets/images/Logo/Logo13.svg";
 import logo14 from "@/assets/images/Logo/Logo14.svg";
 import Image from "next/image";
 
-
-
-
 const BrandsSection = () => {
+  // const [logos ,setLogos] = useState();
 
-    // const [logos ,setLogos] = useState();
+  // setLogos([logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo8, logo9, logo10, logo11, logo12 ,logo13, logo14]);
 
-    // setLogos([logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo8, logo9, logo10, logo11, logo12 ,logo13, logo14]);
-
-    return(
-        <>
-        <div className="flex flex-col items-center mt-4">
-            <h1 className="text-2xl font-semibold">Trusted by <span className="font-extrabold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">400+</span> brands</h1>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-8 my-8 px-4 mx-8">
-               <Image  src={logo1} alt="logo not found"/>
-               <Image  src={logo2} alt="logo not found"/>
-               <Image  src={logo3} alt="logo not found"/>
-               <Image  src={logo4} alt="logo not found"/>
-               <Image  src={logo5} alt="logo not found"/>
-               <Image  src={logo6} alt="logo not found"/>
-               <Image  src={logo7} alt="logo not found"/>
-               <Image  src={logo8} alt="logo not found"/>
-               <Image  src={logo9} alt="logo not found"/>
-               <Image  src={logo10} alt="logo not found"/>
-               <Image  src={logo11} alt="logo not found"/>
-               <Image  src={logo12} alt="logo not found"/>
-               <Image  src={logo13} alt="logo not found"/>
-               <Image  src={logo14} alt="logo not found"/>
-
-            </div>
+  return (
+    <>
+      <div className='flex flex-col items-center mt-4'>
+        <h1 className='text-3xl font-semibold'>
+          Trusted by{" "}
+          <span className='font-extrabold bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent'>
+            400+
+          </span>{" "}
+          brands
+        </h1>
+        <div className='flex flex-row flex-wrap items-center justify-center gap-8 my-8 px-4 mx-8'>
+          <Image src={logo1} alt='logo not found' />
+          <Image src={logo2} alt='logo not found' />
+          <Image src={logo3} alt='logo not found' />
+          <Image src={logo4} alt='logo not found' />
+          <Image src={logo5} alt='logo not found' />
+          <Image src={logo6} alt='logo not found' />
+          <Image src={logo7} alt='logo not found' />
+          <Image src={logo8} alt='logo not found' />
+          <Image src={logo9} alt='logo not found' />
+          <Image src={logo10} alt='logo not found' />
+          <Image src={logo11} alt='logo not found' />
+          <Image src={logo12} alt='logo not found' />
+          <Image src={logo13} alt='logo not found' />
+          <Image src={logo14} alt='logo not found' />
         </div>
-        </>
-    )
-}
+      </div>
+    </>
+  );
+};
 
 export default BrandsSection;
