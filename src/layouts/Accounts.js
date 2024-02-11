@@ -1,6 +1,7 @@
 import AccountCard from '@/components/AccountCard/AccountCard'
 import React from 'react'
 
+
 export default function Accounts() {
   return (
     <div>
@@ -12,7 +13,13 @@ export default function Accounts() {
                 Add Account <span className='test-3xl'>+</span>
             </button>
         </div>
-        <div>
+        <div className='flex flex-row flex-wrap gap-4 py-6 px-10'>
+            <AccountCard/>
+            <AccountCard/>
+            <AccountCard/>
+            <AccountCard/>
+            <AccountCard/>
+            <AccountCard/>
             <AccountCard/>
         </div>
     </div>
